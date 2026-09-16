@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dipesh Patne Photography & Videography — capturing beautiful moments and creating timeless stories.">
+  <title>Dipesh Patne | Photography & Videography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="#home">DIPESH PATNE | FILMS</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="menu" id="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">PHOTOGRAPHY & VIDEOGRAPHY</p>
+        <h1>Capturing<br><em>Beautiful Moments</em></h1>
+        <p class="hero-copy">Turning your special moments into timeless memories.</p>
+        <a class="button" href="#gallery">View My Work</a>
+      </div>
+      <div class="scroll-note">SCROLL TO EXPLORE ↓</div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-image image-placeholder">
+        <img src="images/Dipesh.jpg" alt="Dipesh Patne photography">
+      </div>
+      <div class="about-text">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2>Hi, I'm Dipesh.</h2>
+        <p>I'm a photographer and videographer passionate about capturing real emotions, beautiful moments and stories.</p>
+        <p>From weddings and pre-weddings to portraits and events, I create photographs and films that you can remember for years.</p>
+        <a class="button button-dark" href="#contact">Let's Work Together</a>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Photography Gallery</h2>
+        <p>Replace the sample images in the <strong>images</strong> folder with your own photographs.</p>
+      </div>
+      <div class="gallery">
+        <button class="gallery-item" data-full="images/Pink.JPG" aria-label="Open photo 1">
+          <img src="images/Pink.JPG" alt="Photography portfolio image 1">
+        </button>
+        <button class="gallery-item" data-full="images/Butterfly.jpg" aria-label="Open photo 2">
+          <img src="images/Butterfly.jpg" alt="Photography portfolio image 2">
+        </button>
+        <button class="gallery-item" data-full="images/photo3.jpg" aria-label="Open photo 3">
+          <img src="images/photo3.jpg" alt="Photography portfolio image 3">
+        </button>
+        <button class="gallery-item" data-full="images/photo4.jpg" aria-label="Open photo 4">
+          <img src="images/photo4.jpg" alt="Photography portfolio image 4">
+        </button>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I DO</p>
+        <h2>My Services</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="service-icon">01</span>
+          <h3>Photography</h3>
+          <p>Professional photography for weddings, portraits, events and special moments.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-icon">02</span>
+          <h3>Videography</h3>
+          <p>Cinematic videos and memorable films for your important occasions.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-icon">03</span>
+          <h3>Weddings</h3>
+          <p>Wedding photography, pre-wedding stories and cinematic wedding films.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section video-section">
+      <div class="video-copy">
+        <p class="eyebrow">CINEMATIC STORIES</p>
+        <h2>Watch the Moments.</h2>
+        <p>Add your YouTube or Instagram reel link here when you're ready.</p>
+        <a class="button" href="#contact">Book a Shoot</a>
+      </div>
+      <div class="video-box">
+        <div class="play">▶</div>
+        <span>VIDEO / REEL</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-heading">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Let's Create Something Beautiful</h2>
+        <p>For bookings and enquiries, send a message on WhatsApp or email.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Let's talk</h3>
+          <p>Replace the placeholder details below with your real contact information before publishing.</p>
+          <a href="https://wa.me/918468811790" class="contact-link" target="_blank" rel="noopener">WhatsApp →</a>
+          <a href="mailto:dipeshpatne30@email.com" class="contact-link">Email →</a>
+          <a href="https://instagram.com/dipeshpatnefilms" class="contact-link" target="_blank" rel="noopener">Instagram →</a>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone / WhatsApp" required>
+          <select name="service" required>
+            <option value="">Select Service</option>
+            <option>Wedding Photography</option>
+            <option>Wedding Videography</option>
+            <option>Pre-Wedding</option>
+            <option>Portrait Photography</option>
+            <option>Event Photography</option>
+            <option>Other</option>
+          </select>
+          <textarea name="message" rows="5" placeholder="Tell me about your event..." required></textarea>
+          <button class="button button-dark" type="submit">Send Enquiry on WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h3>DIPESH PATNE</h3>
+    <p>Photography & Videography</p>
+    <div class="socials">
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/919999999999" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Dipesh Patne Photography. All Rights Reserved.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
+    <img id="lightboxImage" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
