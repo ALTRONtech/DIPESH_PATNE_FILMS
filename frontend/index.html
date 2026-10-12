@@ -5,13 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Dipesh Patne Photography & Videography — capturing beautiful moments and creating timeless stories.">
   <title>Dipesh Patne | Photography & Videography</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='8' width='28' height='19' rx='3' fill='none' stroke='%23d8c29b' stroke-width='2.4'/%3E%3Cpath d='M11 8l2-3.4h6L21 8' fill='none' stroke='%23d8c29b' stroke-width='2.4' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='17.5' r='5.4' fill='none' stroke='%23d8c29b' stroke-width='2.4'/%3E%3Ccircle cx='25.4' cy='12.6' r='1.3' fill='%23d8c29b'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <svg class="preloader-icon" viewBox="0 0 32 32" width="44" height="44" aria-hidden="true">
+        <rect x="2" y="8" width="28" height="19" rx="3" fill="none" stroke="currentColor" stroke-width="2.4"/>
+        <path d="M11 8l2-3.4h6L21 8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+        <circle cx="16" cy="17.5" r="5.4" fill="none" stroke="currentColor" stroke-width="2.4"/>
+      </svg>
+      <span class="preloader-text">DIPESH PATNE | FILMS</span>
+      <span class="preloader-bar"><span></span></span>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
     <nav class="navbar">
-      <a class="logo" href="#home">DIPESH PATNE | FILMS</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <a class="logo" href="#home">DIPESH PATNE <span class="logo-sep">|</span> FILMS</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
       <div class="menu" id="menu">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -26,67 +39,110 @@
     <section id="home" class="hero">
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <p class="eyebrow">PHOTOGRAPHY & VIDEOGRAPHY</p>
-        <h1>Capturing<br><em>Beautiful Moments</em></h1>
-        <p class="hero-copy">Turning your special moments into timeless memories.</p>
-        <a class="button" href="#gallery">View My Work</a>
+        <p class="eyebrow hero-fade" style="--d:.1s">PHOTOGRAPHY & VIDEOGRAPHY</p>
+        <h1 class="hero-fade" style="--d:.25s">Capturing<br><em>Beautiful Moments</em></h1>
+        <p class="hero-copy hero-fade" style="--d:.4s">Turning your special moments into timeless memories.</p>
+        <a class="button button-hero hero-fade" style="--d:.55s" href="#gallery">View My Work</a>
       </div>
-      <div class="scroll-note">SCROLL TO EXPLORE ↓</div>
+      <div class="scroll-note hero-fade" style="--d:.9s">SCROLL TO EXPLORE
+        <svg class="scroll-arrow" viewBox="0 0 12 20" width="10" height="16" aria-hidden="true">
+          <path d="M6 1v16M2 13l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
     </section>
 
     <section id="about" class="section about">
-      <div class="about-image image-placeholder">
+      <div class="about-image image-placeholder reveal">
         <img src="images/Dipesh.jpg" alt="Dipesh Patne photography">
       </div>
       <div class="about-text">
-        <p class="eyebrow">ABOUT ME</p>
-        <h2>Hi, I'm Dipesh.</h2>
-        <p>I'm a photographer and videographer passionate about capturing real emotions, beautiful moments and stories.</p>
-        <p>From weddings and pre-weddings to portraits and events, I create photographs and films that you can remember for years.</p>
-        <a class="button button-dark" href="#contact">Let's Work Together</a>
+        <p class="eyebrow reveal">ABOUT ME</p>
+        <h2 class="reveal" style="--d:.08s">Hi, I'm Dipesh.</h2>
+        <p class="reveal" style="--d:.16s">I'm a photographer and videographer passionate about capturing real emotions, beautiful moments and stories.</p>
+        <p class="reveal" style="--d:.24s">From weddings and pre-weddings to portraits and events, I create photographs and films that you can remember for years.</p>
+        <div class="stats reveal" style="--d:.32s">
+          <div class="stat">
+            <span class="stat-number" data-count="150">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Shoots Done</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years of Craft</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="98">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+        <a class="button button-dark reveal" style="--d:.4s" href="#contact">Let's Work Together</a>
       </div>
     </section>
 
     <section id="gallery" class="section gallery-section">
       <div class="section-heading">
-        <p class="eyebrow">SELECTED WORK</p>
-        <h2>Photography Gallery</h2>
-        <p>Replace the sample images in the <strong>images</strong> folder with your own photographs.</p>
+        <p class="eyebrow reveal">SELECTED WORK</p>
+        <h2 class="reveal" style="--d:.08s">Photography Gallery</h2>
+        <p class="reveal" style="--d:.16s">A few favourite frames from weddings, portraits and nature — every picture tells a story.</p>
       </div>
       <div class="gallery">
-        <button class="gallery-item" data-full="images/Pink.JPG" aria-label="Open photo 1">
-          <img src="images/Pink.JPG" alt="Photography portfolio image 1">
+        <button class="gallery-item reveal" data-full="images/Pink.JPG" aria-label="Open photo 1" style="--d:.05s">
+          <img src="images/Pink.JPG" alt="Photography portfolio image 1" loading="lazy">
+          <span class="gallery-overlay"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
-        <button class="gallery-item" data-full="images/Butterfly.jpg" aria-label="Open photo 2">
-          <img src="images/Butterfly.jpg" alt="Photography portfolio image 2">
+        <button class="gallery-item reveal" data-full="images/Butterfly.jpg" aria-label="Open photo 2" style="--d:.15s">
+          <img src="images/Butterfly.jpg" alt="Photography portfolio image 2" loading="lazy">
+          <span class="gallery-overlay"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
-        <button class="gallery-item" data-full="images/photo3.jpg" aria-label="Open photo 3">
-          <img src="images/photo3.jpg" alt="Photography portfolio image 3">
+        <button class="gallery-item reveal" data-full="images/photo3.jpg" aria-label="Open photo 3" style="--d:.25s">
+          <img src="images/photo3.jpg" alt="Photography portfolio image 3" loading="lazy">
+          <span class="gallery-overlay"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
-        <button class="gallery-item" data-full="images/photo4.jpg" aria-label="Open photo 4">
-          <img src="images/photo4.jpg" alt="Photography portfolio image 4">
+        <button class="gallery-item reveal" data-full="images/photo4.jpg" aria-label="Open photo 4" style="--d:.35s">
+          <img src="images/photo4.jpg" alt="Photography portfolio image 4" loading="lazy">
+          <span class="gallery-overlay"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </button>
       </div>
     </section>
 
     <section id="services" class="section services">
       <div class="section-heading">
-        <p class="eyebrow">WHAT I DO</p>
-        <h2>My Services</h2>
+        <p class="eyebrow reveal">WHAT I DO</p>
+        <h2 class="reveal" style="--d:.08s">My Services</h2>
       </div>
       <div class="service-grid">
-        <article class="service-card">
-          <span class="service-icon">01</span>
+        <article class="service-card reveal">
+          <span class="service-icon">
+            <svg class="service-svg" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
+              <rect x="3" y="10" width="34" height="23" rx="4" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <path d="M13.5 10l2.6-4.4h7.8L26.5 10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+              <circle cx="20" cy="21.5" r="6.6" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <circle cx="31.5" cy="15.5" r="1.6" fill="currentColor"/>
+            </svg>
+            <i class="service-num">01</i>
+          </span>
           <h3>Photography</h3>
           <p>Professional photography for weddings, portraits, events and special moments.</p>
         </article>
-        <article class="service-card">
-          <span class="service-icon">02</span>
+        <article class="service-card reveal" style="--d:.12s">
+          <span class="service-icon">
+            <svg class="service-svg" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
+              <rect x="2.5" y="12" width="25" height="18" rx="3.5" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <path d="M27.5 18.2l10-4.7v13l-10-4.7z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+              <circle cx="11" cy="17.8" r="2" fill="currentColor"/>
+            </svg>
+            <i class="service-num">02</i>
+          </span>
           <h3>Videography</h3>
           <p>Cinematic videos and memorable films for your important occasions.</p>
         </article>
-        <article class="service-card">
-          <span class="service-icon">03</span>
+        <article class="service-card reveal" style="--d:.24s">
+          <span class="service-icon">
+            <svg class="service-svg" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
+              <circle cx="14.5" cy="20" r="8.2" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <circle cx="25.5" cy="20" r="8.2" fill="none" stroke="currentColor" stroke-width="2.2"/>
+            </svg>
+            <i class="service-num">03</i>
+          </span>
           <h3>Weddings</h3>
           <p>Wedding photography, pre-wedding stories and cinematic wedding films.</p>
         </article>
@@ -95,34 +151,45 @@
 
     <section class="section video-section">
       <div class="video-copy">
-        <p class="eyebrow">CINEMATIC STORIES</p>
-        <h2>Watch the Moments.</h2>
-        <p>Add your YouTube or Instagram reel link here when you're ready.</p>
-        <a class="button" href="#contact">Book a Shoot</a>
+        <p class="eyebrow reveal">CINEMATIC STORIES</p>
+        <h2 class="reveal" style="--d:.08s">Watch the Moments.</h2>
+        <p class="reveal" style="--d:.16s">Every celebration has a story — I craft it into films you will replay for a lifetime.</p>
+        <a class="button reveal" style="--d:.24s" href="#contact">Book a Shoot</a>
       </div>
-      <div class="video-box">
-        <div class="play">▶</div>
+      <div class="video-box reveal" style="--d:.15s">
+        <div class="play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+        </div>
         <span>VIDEO / REEL</span>
       </div>
     </section>
 
     <section id="contact" class="section contact">
       <div class="section-heading">
-        <p class="eyebrow">GET IN TOUCH</p>
-        <h2>Let's Create Something Beautiful</h2>
-        <p>For bookings and enquiries, send a message on WhatsApp or email.</p>
+        <p class="eyebrow reveal">GET IN TOUCH</p>
+        <h2 class="reveal" style="--d:.08s">Let's Create Something Beautiful</h2>
+        <p class="reveal" style="--d:.16s">For bookings and enquiries, send a message on WhatsApp or email.</p>
       </div>
 
       <div class="contact-grid">
-        <div class="contact-card">
+        <div class="contact-card reveal">
           <h3>Let's talk</h3>
-          <p>Replace the placeholder details below with your real contact information before publishing.</p>
-          <a href="https://wa.me/918468811790" class="contact-link" target="_blank" rel="noopener">WhatsApp →</a>
-          <a href="mailto:dipeshpatne30@email.com" class="contact-link">Email →</a>
-          <a href="https://instagram.com/dipeshpatnefilms" class="contact-link" target="_blank" rel="noopener">Instagram →</a>
+          <p>Fill the form and your enquiry lands straight in my inbox — or reach me directly on any of these.</p>
+          <a href="https://wa.me/918468811790" class="contact-link" target="_blank" rel="noopener">
+            <span class="link-ico"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 8.5c.6 2.8 3.7 5.9 6.5 6.5l1-1.6-2.2-1-1 .9c-1-.5-2.1-1.6-2.6-2.6l.9-1-1-2.2z" fill="currentColor"/></svg></span>
+            WhatsApp <em class="arrow">→</em>
+          </a>
+          <a href="mailto:dipeshpatne30@email.com" class="contact-link">
+            <span class="link-ico"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Email <em class="arrow">→</em>
+          </a>
+          <a href="https://instagram.com/dipeshpatnefilms" class="contact-link" target="_blank" rel="noopener">
+            <span class="link-ico"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/></svg></span>
+            Instagram <em class="arrow">→</em>
+          </a>
         </div>
 
-        <form id="contactForm" class="contact-form">
+        <form id="contactForm" class="contact-form reveal" style="--d:.12s" novalidate>
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="tel" name="phone" placeholder="Phone / WhatsApp" required>
           <select name="service" required>
@@ -135,7 +202,10 @@
             <option>Other</option>
           </select>
           <textarea name="message" rows="5" placeholder="Tell me about your event..." required></textarea>
-          <button class="button button-dark" type="submit">Send Enquiry on WhatsApp</button>
+          <button class="button button-dark" type="submit" id="submitBtn">
+            <span class="btn-label">Send Enquiry</span>
+          </button>
+          <p class="form-note">Your enquiry is saved to the website database and also opens WhatsApp for a quick chat.</p>
         </form>
       </div>
     </section>
@@ -146,13 +216,28 @@
     <p>Photography & Videography</p>
     <div class="socials">
       <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://wa.me/919999999999" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://wa.me/918468811790" target="_blank" rel="noopener">WhatsApp</a>
     </div>
     <p class="copyright">© <span id="year"></span> Dipesh Patne Photography. All Rights Reserved.</p>
   </footer>
 
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 20V5M5.5 11.5L12 5l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast-dot" aria-hidden="true"></span>
+    <span class="toast-msg" id="toastMsg"></span>
+  </div>
+
   <div class="lightbox" id="lightbox" aria-hidden="true">
     <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next photo">
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
     <img id="lightboxImage" src="" alt="">
   </div>
 
