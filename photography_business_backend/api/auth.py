@@ -28,6 +28,11 @@ class MongoUser(dict):
         return True
 
 class JWTAuthentication(BaseAuthentication):
+    def authenticate_header(self, request):
+        # Makes DRF answer 401 (with WWW-Authenticate: Bearer) instead of 403
+        # when no token is supplied on protected endpoints.
+        return "Bearer"
+
     def authenticate(self, request):
         header = get_authorization_header(request)
         if not header:
